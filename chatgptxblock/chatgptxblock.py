@@ -38,8 +38,8 @@ class ChatgptXBlock(StudioEditableXBlockMixin, XBlock):
         scope=Scope.settings,
         help="Your context here",
     )
-    model_name = String(display_name="Model name", values=('text-davinci-003', 'text-davinci-002', 'text-curie-001', 'text-babbage-001', 'text-ada-001'),
-        default="text-davinci-003", scope=Scope.settings,
+    model_name = String(display_name="Model name", values=('text-davinci-003', 'text-davinci-002', 'text-curie-001', 'text-babbage-001', 'text-ada-001','gpt-3.5-turbo'),
+        default="gpt-3.5-turbo", scope=Scope.settings,
         help="Select a ChatGPT model.")
 
     description = String(
